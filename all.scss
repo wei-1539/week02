@@ -3,7 +3,7 @@
 @import "./sassMIxin//padding/padding4";
 
 
-.header{
+.header {
     background-image: url(./img/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,23 +13,143 @@
     align-items: center;
     color: #fff;
 }
-.banner{
-    span{
+
+.df {
+    display: flex;
+}
+
+.banner {
+    span {
         font-size: 24px;
         line-height: 42px;
         font-weight: 700;
     }
-    h1{
+
+    h1 {
         font-size: 80px;
         line-height: 106px;
         font-weight: 900;
     }
-    p{
+
+    p {
         font-size: 24px;
         line-height: 36px;
         font-weight: 700;
     }
-    &-icon{
+
+    &-icon {
         display: flex;
+    }
+}
+
+.about {
+    text-align: center;
+
+    h2 {
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: 500;
+    }
+
+    &-info {
+        font-size: 24px;
+        line-height: 42px;
+        font-weight: 700;
+
+        .different {
+            line-height: 36px;
+        }
+
+        .bottomLine {
+            width: 384px;
+            margin: 0 auto;
+            border-bottom: 1px solid #000;
+        }
+
+        .circle {
+            &::before {
+                background-color: #891818;
+                content: "";
+                width: 22px;
+                height: 22px;
+                display: inline-block;
+                border-radius: 50%;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.brand {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: 500;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 42px;
+        font-weight: 500;
+
+        :last-child {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+.work {
+    padding-bottom: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: 500;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    li{
+
+        p {
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 42px;
+        }
+    }
+}
+.footer{
+    background-color: #000;
+    text-align: center;
+    color:#fff;
+    h2{
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: 500;
+    }
+    ul{
+        font-size: 24px;
+        line-height: 36px;
+        a{
+            color: #fff;
+            &:hover{
+                color:red
+            }
+        }
     }
 }
