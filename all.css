@@ -135,6 +135,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 *,
@@ -428,6 +429,7 @@ body {
   background-image: url(./img/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -455,7 +457,7 @@ body {
   font-weight: 700;
 }
 .banner-icon {
-  display: flex;
+  justify-content: center;
 }
 
 .about {
@@ -510,6 +512,7 @@ body {
 .brand .title :last-child {
   font-size: 20px;
   line-height: 30px;
+  text-align: center;
 }
 
 .work {
@@ -533,6 +536,9 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 42px;
+}
+.work li a:hover {
+  color: red;
 }
 
 .footer {

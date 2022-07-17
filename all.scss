@@ -7,11 +7,14 @@
     background-image: url(./img/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
+    // height: 958px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+
 }
 
 .df {
@@ -38,7 +41,7 @@
     }
 
     &-icon {
-        display: flex;
+        justify-content: center;
     }
 }
 
@@ -102,8 +105,10 @@
         :last-child {
             font-size: 20px;
             line-height: 30px;
+            text-align: center;
         }
     }
+    
 }
 
 .work {
@@ -124,12 +129,16 @@
         line-height: 30px;
     }
     li{
-
         p {
             text-align: center;
             font-weight: 500;
             font-size: 20px;
             line-height: 42px;
+        }
+        a{
+            &:hover{
+                color:red
+            }
         }
     }
 }
