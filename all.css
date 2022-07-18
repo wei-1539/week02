@@ -461,7 +461,8 @@ body {
 }
 
 .about {
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 .about h2 {
   font-size: 64px;
@@ -472,6 +473,7 @@ body {
   font-size: 24px;
   line-height: 42px;
   font-weight: 700;
+  text-align: center;
 }
 .about-info .different {
   line-height: 36px;
@@ -480,6 +482,10 @@ body {
   width: 384px;
   margin: 0 auto;
   border-bottom: 1px solid #000;
+}
+.about-info .circle {
+  justify-content: center;
+  align-items: center;
 }
 .about-info .circle::before {
   background-color: #891818;
